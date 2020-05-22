@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 50px;
+        }
+        .heading{
+            color: cadetblue;
+        }
+        .paragraph{
+            color: rgb(158, 155, 154);
+            margin-top: 30px;
+            column-count: 3;
+            column-width: 300px;
+            column-rule: 3px solid rgb(16, 248, 209);
+            column-gap: 50px;
+        }
+        .paragraph p{
+            margin-bottom: 30px;
+            line-height: 2;
+            text-align: justify;
+        }
+        .full{
+            column-span: all;
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 480px) {
+            body{
+                padding: 20px;
+            }
+            .full{
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">CSS Column Property</h1>
+    <div class="paragraph">
+        <p class="full">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius earum illo deleniti! Amet modi recusandae excepturi explicabo quidem perferendis quas accusamus soluta? Reiciendis voluptatibus hic autem in culpa esse nisi.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit maiores non unde itaque fuga nemo, numquam sint sunt deleniti facilis eaque provident magnam quisquam? Labore dolorum adipisci voluptate fuga?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius earum illo deleniti! Amet modi recusandae excepturi explicabo quidem perferendis quas accusamus soluta? Reiciendis voluptatibus hic autem in culpa esse nisi. 
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit maiores non unde itaque fuga nemo, numquam sint sunt deleniti facilis eaque provident magnam quisquam? Labore dolorum adipisci voluptate fuga?
+        </p>
+        <p class="full">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius earum illo deleniti! Amet modi recusandae excepturi explicabo quidem perferendis quas accusamus soluta? Reiciendis voluptatibus hic autem in culpa esse nisi. 
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit maiores non unde itaque fuga nemo, numquam sint sunt deleniti facilis eaque provident magnam quisquam? Labore dolorum adipisci voluptate fuga?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit maiores non unde itaque fuga nemo, numquam sint sunt deleniti facilis eaque provident magnam quisquam? Labore dolorum adipisci voluptate fuga?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit maiores non unde itaque fuga nemo, numquam sint sunt deleniti facilis eaque provident magnam quisquam? Labore dolorum adipisci voluptate fuga?
+        </p>
+    </div>
+</body>
+</html>

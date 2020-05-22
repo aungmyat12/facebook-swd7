@@ -1,0 +1,564 @@
+:root{
+    --primary : #2d88ff;
+    --dark : #18191a;
+    --semi-dark : #242526;
+    --soft-dark : #3a3b3c;
+    --danger : #f02849;
+    --success : #40a558;
+    --warning : #f7b928;
+    --text: #dadce1;
+    --text-light: #fff;
+    --hover: rgb(87, 85, 85);
+    --pink : #D843AC;
+    --background-messenger : #0084FF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+}
+body{
+    background-color: var(--dark);
+}
+.nav{
+    background-color: var(--semi-dark);
+    display: flex;
+}
+.left{
+    width: 25%;
+}
+.left-box{
+    display: flex;
+    padding: 10px;
+}
+.logo{
+    width: 40px;
+    margin-right: 10px;
+}
+.search-box{
+    background-color: var(--soft-dark);
+    border-radius: 100px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.search-box .feather-search{
+    margin-right: 10px;
+}
+.search-input{
+    color: var(--text);
+    background: var(--soft-dark);
+    border: none;
+}
+.search-input:focus{
+    outline: none;
+}
+.center{
+    width: 60%;
+}
+.center-box{
+    display: flex;
+}
+.center-link{
+    display: flex;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 5px solid var(--semi-dark);
+    border-top: 5px solid var(--semi-dark);
+    position: relative;
+    margin: 0 5px;
+    transition: .5s;
+}
+.center-link:hover{
+    background: var(--soft-dark);
+    border-radius: 15px;
+}
+.center-link.active{
+    border-bottom-color: var(--primary);
+    background-color: var(--semi-dark);
+}
+.center-link.active:hover{
+    background: var(--semi-dark);
+    border-radius: 0px;
+}
+.center-link.active .center-icon{
+    color: var(--primary) !important;
+}
+.center-icon{
+    font-size: 30px;
+}
+.center-link .noti{
+    background: red;
+    padding: 1px 5px;
+    border-radius: 10px;
+    font-size: 13px;
+    position: absolute;
+    top: 4px;
+    right: 30px;
+    font-weight: 700;
+    color: var(--text-light);
+}
+.right{
+    width: 25%;
+}
+.right-box{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.profile:hover{
+    background-color: var(--soft-dark);
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: .5s;
+}
+.profile-photo{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.profile-text{
+    color: var(--text);
+    font-weight: bold;
+}
+.notification-box{
+    display: flex;
+}
+.notification-box .notification{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--soft-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+}
+.notification:hover{
+    background-color: var(--hover);
+}
+.fb-body{
+    display: flex;
+}
+.left-aside{
+    width: 25%;
+    padding: 26px 0 0 10px;
+}
+.left-aside-box{
+    width: 300px;
+}
+.left-aside-group{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 12px 10px;
+    transition: .1s;
+}
+.left-aside-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-aside-group img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.left-aside-group span{
+    font-size: 17px;
+}
+.left-aside-group:hover{
+    background-color: var(--soft-dark);
+    border-radius: 5px;
+}
+.left-aside-group i{
+    margin-right: 20px;
+    font-size: 25px;
+    margin-left: 7px;
+}
+.left-aside-group .fa-building{
+    color: var(--pink);
+}
+.left-aside-group .fa-facebook-messenger{
+    color: var(--background-messenger);
+}
+.left-aside-group .fa-video{
+    color: var(--danger);
+}
+.fa-play-circle{
+    color: var(--warning);
+}
+.fa-user-friends{
+    color: var(--background-messenger);
+}
+.btn{
+    margin: 15px 0;
+    width: 99%;
+}
+.btn button{
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: var(--soft-dark);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 15px;
+    transition: .3s;
+}
+.btn button:hover{
+    background-color: var(--hover);
+}
+.page-group{
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    transition: .1s;
+}
+.page-group:hover{
+    background-color: var(--soft-dark);
+    border-radius: 11px;
+}
+.page-group .page-group-name{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.page-group img{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.new-feed{
+    width: 50%;
+}
+.my-day-list{
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+.my-day{
+    width: 120px;
+    min-height: 230px;
+    overflow: hidden;
+    position: relative;
+    background-size: 160% 100%;
+    background-position: center;
+    border-radius: 20px;
+    padding: 10px;
+    transition: .3s;
+}
+.my-day:hover{
+    opacity: .8;
+}
+.my-day-owner{
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-day-owner .feather-plus{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus{
+    background-color: var(--semi-dark);
+}
+.my-day-own-img{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    
+    background-size: 100% 100%;
+    background-position: center;
+}
+.my-day-text{
+    position: absolute;
+    bottom: 10px;
+    color: var(--text-light);
+    font-weight: bolder;
+}
+.my-day-img{
+    width: 100%;
+}
+.add-post{
+    margin-top: 20px;
+    background-color: var(--semi-dark);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.add-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-text-profile{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.add-text-box{
+    background-color: var(--soft-dark);
+    border-radius: 100px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 20px;
+}
+.add-text-box .search-input{
+    margin-right: 10px;
+}
+.divider{
+    height: 1px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: var(--soft-dark);
+}
+.add-file{
+    display: flex;
+    justify-content: space-between;
+}
+.add-file div{
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-file div:hover{
+    background-color: var(--soft-dark);
+}
+.add-file .video i{
+    margin-right: 5px;
+    color: var(--danger);
+}
+.add-file .photo i{
+    margin-right: 5px;
+    color: var(--success);
+}
+.add-file .emoji i{
+    margin-right: 5px;
+    color: var(--warning);
+}
+.post-list{
+    margin-top: 20px;
+}
+.post-list-box{
+    background-color: var(--semi-dark);
+    border-radius: 5px;
+}
+.post-list-who{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.post-list-name{
+    display: flex;
+}
+.post-list-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.post-list-box .feather-icon{
+    margin-top: 10px;
+}
+.post-name h1{
+    margin-bottom: 1px;
+    font-size: 17px;
+}
+.post-name span{
+    font-size: 13px;
+}
+.post-content{
+    padding: 10px 20px;
+}
+.post-content h1{
+    font-size: 15px;
+}
+.content-img img{
+    width: 100%;
+    height: 600px;
+}
+.reaction{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+.reaction-like{
+    display: flex;
+    align-items: center;
+}
+.reaction img{
+    width: 20px;
+}
+.reaction span{
+    font-size: 16px;
+    line-height: 40px;
+}
+.post-list .divider{
+    width: 95%;
+    margin: 4px auto;
+}
+.like-comment-share{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2px auto;
+}
+.like-comment-share div{
+    flex-grow: 1;
+    padding: 5px 0;
+    text-align: center;
+    transition: .3s;
+}
+.like-comment-share div:hover{
+    background-color: var(--soft-dark);
+    border-radius: 5px;
+}
+.comment-input-box{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 0px auto;
+    padding: 5px 0;
+}
+.comment-input-box .me{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.comment-box{
+    display: flex;
+    flex-grow: 1;
+    background-color: var(--soft-dark);
+    padding: 10px 15px;
+    border-radius: 100px;
+    justify-content: space-between;
+}
+.comment-box i{
+    margin: 3px;
+    font-size: 17px;
+}
+.comment-input-box .comment-box input{
+    background-color: var(--soft-dark);
+    border: none;
+    outline: none;
+}
+.comment-post{
+    color: var(--soft-dark);
+}
+.chat-box{
+    width: 25%;
+}
+.chat-right{
+    padding-left: 50px;
+    margin-right: 20px;
+}
+.scroll-my-day{
+    width: 50px;
+    height: 50px;
+    background-color: var(--semi-dark);
+    position: absolute;
+    top: 75px;
+    right: -23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 3;
+    transition: .3s;
+}
+.scroll-my-day:hover{
+    background-color: var(--hover);
+}
+.chat-birthday{
+    padding: 25px 16px 0 0;
+}
+.chat-birthday span{
+    color: var(--text);
+}
+.birthday-now{
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    transition: .2s;
+}
+.birthday-now:hover{
+    background-color: var(--soft-dark);
+    border-radius: 10px;
+}
+.birthday-now i{
+    font-size: 30px;
+    color: var(--success);
+    margin-right: 14px;
+}
+.contacts{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-logo i{
+    margin-left: 17px;
+    padding: 10px;
+    transition: .3s;
+    border-radius: 50%;
+}
+.contacts-logo i:hover{
+    background-color: var(--soft-dark);
+}
+.contacts-people{
+    margin-top: 10px;
+}
+.contacts-people .page-group img{
+    border-radius: 50%;
+}
+.contact-plus-icon{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.contact-plus-icon i{
+    color: var(--text-light);
+    background-color: rgba(214, 214, 214,.4);
+    padding: 13px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+.contact-plus-icon::before{
+    content: '';
+    position: absolute;
+    top: 33px;
+    left: 12px;
+    border: 5px solid transparent;
+    border-top-color: var(--text-light);
+    transform: rotate(35deg);
+}

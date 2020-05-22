@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="icon/feather.css">
+    <style>
+        :root{
+            --dark : #18191A;
+            --soft-dark : #3A3B3C;
+            --semi-dark : #242526;
+            --primary : #2D88FF;
+            --danger : #F23E5C;
+            --warning : #F8C03E;
+            --hover : #4E4F50;
+            --text : #dadce1;
+            --text-color : #fff;
+            --success : #58C472;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            color: var(--text);
+        }
+        body{
+            background: var(--dark);
+        }
+        nav{
+            background-color: var(--semi-dark);
+            height: 60px;
+            display: flex;
+        }
+        .left{
+            width: 25%;
+        }
+        .left-box{
+            display: flex;
+            padding: 10px;
+        }
+        .search-box{
+            background-color: var(--soft-dark);
+            border-radius: 100px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            width: 40px;
+            margin-right: 10px;
+        }
+        .feather-search{
+            margin-right: 10px;
+        }
+        .search-input{
+            color: var(--text);
+            background-color: var(--soft-dark);
+            border: none;
+        }
+        .search-input:focus{
+            outline: none;
+        }
+        .center{
+            width: 50%;
+        }
+        .center-box{
+            display: flex;
+        }
+        .center-box .center-link{
+            width: 120px;
+            background-color: var(--semi-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px;
+            padding: 10px;
+            border-bottom: 5px solid var(--semi-dark);
+            border-top: 5px solid var(--semi-dark);
+            position: relative;
+            transition: .5s;
+        }
+        .center-link .center-icon{
+            font-size: 30px;
+        }
+        .center-link:hover{
+            background-color: var(--soft-dark);
+            border-radius: 10px;
+        }
+        .center-link.active{
+            border-bottom-color: var(--primary);
+            background-color: var(--semi-dark);
+            border-radius: 0px;
+        }
+        .center-link .noti{
+            font-size: 15px;
+            position: absolute;
+            top: 3px;
+            right: 34px;
+            background-color: var(--danger);
+            padding: 1px 6px;
+            border-radius: 10px;
+        }
+        .center-link .noti-airplay{
+            position: absolute;
+            top: 5px;
+            right: 23px;
+            background-color: var(--danger);
+            padding: 1px 4px;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+        .right{
+            width: 25%;
+        }
+        .right-box{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 5px 10px;
+            border-radius: 30px;
+            transition: .5s;
+        }
+        .profile:hover{
+            background-color: var(--soft-dark);
+        }
+        .profile-photo{
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .notification-box{
+            display: flex;
+        }
+        .notification{
+            width: 40px;
+            height: 40px;
+            background-color: var(--soft-dark);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 5px;
+        }
+        .notification:hover{
+            background-color: var(--hover);
+        }
+        .fb-body{
+            display: flex;
+        }
+        .left-aside{
+            width: 25%;
+        }
+        .new-feed{
+            width: 50%;
+        }
+        .my-day-list{
+            margin-top: 20px;
+            display: flex;
+            position: relative;
+        }
+        .my-day{
+            min-width: 110px;
+            min-height: 230px;
+            overflow: hidden;
+            position: relative;
+            background-size: 160% 100%;
+            background-position: center;
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .my-day-owner{
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .my-day-owner .feather-plus{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .plus{
+            background-color: var(--semi-dark);
+        }
+        .my-day-own-img{
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            
+            background-size: 100% 100%;
+            background-position: center;
+        }
+        .my-day-text{
+            position: absolute;
+            bottom: 10px;
+            color: var(--text-light);
+            font-weight: bolder;
+        }
+        .my-day-img{
+            width: 100%;
+        }
+        .add-post{
+            
+        }
+        .post-list{
+
+        }
+        .chat-box{
+            width: 25%;
+        }
+        .scroll-my-day{
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            position: absolute;
+            top: 75px;
+            right: -25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="left">
+            <div class="left-box">
+                <img src="pic/logo.png" alt="" class="logo">
+                <div class="search-box">
+                    <i class="feather-search"></i>
+                    <input type="text" class="search-input" placeholder="Search Facebook">
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="center-box">
+                <div class="center-link active">
+                    <i class="feather-home center-icon"></i>
+                </div>
+                <div class="center-link">
+                    <i class="feather-flag center-icon"></i>
+                </div>
+                <div class="center-link">
+                    <i class="feather-airplay center-icon"></i>
+                    <span class="noti-airplay">90+</span>
+                </div>
+                <div class="center-link">
+                    <i class="feather-users center-icon"></i>
+                    <span class="noti">5</span>
+                </div>
+                <div class="center-link">
+                    <i class="feather-grid center-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-box">
+                <div class="profile">
+                    <img src="pic/profile.jpg" alt="" width="30px" class="profile-photo">
+                    <span class="profile-text">Aung</span>
+                </div>
+                <div class="notification-box">
+                    <div class="notification">
+                        <i class="feather-plus"></i>
+                    </div>
+                    <div class="notification">
+                        <i class="feather-message-square"></i>
+                    </div>
+                    <div class="notification">
+                        <i class="feather-bell"></i>
+                    </div>
+                    <div class="notification">
+                        <i class="feather-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="fb-body">
+        <section class="left-aside">
+
+        </section>
+        <section class="new-feed">
+            <div class="my-day-list">
+                <div class="my-day" style="background-image: url(./pic/profile.jpg);">
+                    <div class="my-day-owner plus">
+                        <i class="feather-plus"></i>
+                    </div>
+                    <p class="my-day-text">Add to Your Story</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/dog1.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/dog1.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Min Khant</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/girl2.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/girl2.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Hla Hla</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/girl4.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/girl4.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Mya Mya</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/cat1.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/cat1.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Thet Thet Oo</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/cat3.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/cat3.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">My Love</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/cat4.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/cat4.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Myo Thu</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/cat5.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/cat5.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Zaw Zaw</p>
+                </div>
+                <div class="scroll-my-day">
+                    <i class="feather-chevron-right"></i>
+                </div>
+            </div>
+            <div class="add-post"></div>
+            <div class="post-list"></div>
+        </section>
+        <section class="chat-box">
+
+        </section>
+    </section>
+</body>
+</html>

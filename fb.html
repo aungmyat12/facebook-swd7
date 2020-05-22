@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu-Bar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon/feather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="left">
+            <div class="left-box">
+                <img src="pic/logo.png" class="logo" alt="">
+                <div class="search-box">
+                    <i class="feather-search"></i>
+                    <input type="text" class="search-input" placeholder="Search Facebook">
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="center-box">
+                <div class="center-link active">
+                    <i class="feather-home center-icon"></i>
+                </div>
+                <div class="center-link">
+                    <i class="feather-flag center-icon"></i>
+                </div>
+                <div class="center-link">
+                    <i class="feather-airplay center-icon"></i>
+                    <span class="noti">9+</span>
+                </div>
+                <div class="center-link">
+                    <i class="feather-users center-icon"></i>
+                    <span class="noti">5</span>
+                </div>
+                <div class="center-link">
+                    <i class="feather-grid center-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-box">
+                <div class="profile">
+                    <img src="pic/profile.jpg" alt="" class="profile-photo">
+                    <span class="profile-text">Aung</span>
+                </div>
+                <div class="notification-box">
+                    <div class="notification">
+                        <i class="feather-plus"></i>
+                    </div>
+                    <div class="notification">
+                        <i class="feather-message-square"></i>
+                    </div>
+                    <div class="notification">
+                        <i class="feather-bell"></i>
+                    </div>
+                    <div class="notification">
+                        <i class="feather-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="fb-body">
+        <section class="left-aside">
+            <div class="left-aside-box">
+                <div class="left-aside-group">
+                    <div class="left-aside-photo">
+                        <img src="pic/profile.jpg" alt="">
+                    </div>
+                    <span>Aung Myat Oo</span>
+                </div>
+                <div class="left-aside-group">
+                    <div class="left-aside-photo">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <span>COVID-19 Information Center</span>
+                </div>
+                <div class="left-aside-group">
+                    <div class="left-aside-photo">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </div>
+                    <span>Messenger</span>
+                </div>
+                <div class="left-aside-group">
+                    <div class="left-aside-photo">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <span>Live Videos</span>
+                </div>
+                <div class="left-aside-group">
+                    <div class="left-aside-photo">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <span>Videos</span>
+                </div>
+                <div class="left-aside-group">
+                    <div class="left-aside-photo">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <span>Friends</span>
+                </div>
+                <div class="btn">
+                    <button>See More <i class="feather-chevron-down"></i></button>
+                    <div class="divider"></div>
+                </div>
+                <div class="shortcuts">
+                    <div class="shortcuts-box">
+                        <div class="page-group">
+                            <img src="pic/bwd.jpg" alt="">
+                            <span>MMS IT BWD 7</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/bwd.jpg" alt="">
+                            <div class="page-group-name">
+                                <span>MMS IT BWD 8</span>
+                                <label>15</label>
+                            </div>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/swd7.jpg" alt="">
+                            <div class="page-group-name">
+                                <span>MMS IT SWD 8</span>
+                                <label>12</label>
+                            </div>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/swd7.jpg" alt="">
+                            <span>MMS IT SWD 6</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/japan1.jpg" alt="">
+                            <div class="page-group-name">
+                                <span>JAPANESE GROUP</span>
+                                <label>20+</label>
+                            </div>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/web.jpg" alt="">
+                            <span>Web Group</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/tu.jpg" alt="">
+                            <span>FUNNY GROUP</span>
+                        </div>
+                        <div class="btn">
+                            <button>See More <i class="feather-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new-feed">
+            <div class="my-day-list">
+                <div class="my-day" style="background-image: url(./pic/profile.jpg);">
+                    <div class="my-day-owner plus">
+                        <i class="feather-plus"></i>
+                    </div>
+                    <p class="my-day-text">Add to Your Story</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/dog1.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/dog1.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Min Khant</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/girl2.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/girl2.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Hla Hla</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/girl4.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/girl4.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Mya Mya</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/cat1.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/cat1.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">Thet Thet Oo</p>
+                </div>
+                <div class="my-day" style="background-image: url(./pic/cat3.jpg);">
+                    <div class="my-day-owner">
+                        <div class="my-day-own-img" style="background-image: url(pic/cat3.jpg);"></div>
+                    </div>
+                    <p class="my-day-text">My Love</p>
+                </div>
+                <div class="scroll-my-day">
+                    <i class="feather-chevron-right"></i>
+                </div>
+            </div>
+            <div class="add-post">
+                <div class="add-post-box">
+                    <div class="add-text">
+                        <img src="pic/profile.jpg" class="add-text-profile" alt="">
+                        <div class="add-text-box">
+                            <input type="text" class="search-input" name="search" placeholder="What is on your mind, Aung?">
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="add-file">
+                        <div class="video">
+                            <i class="feather-video"></i>
+                            <span>Live Video</span>
+                        </div>
+                        <div class="photo">
+                            <i class="feather-image"></i>
+                            <span>All Photos</span>
+                        </div>
+                        <div class="emoji">
+                            <i class="feather-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-list">
+                <div class="post-list-box">
+                    <div class="post-list-who">
+                        <div class="post-list-name">
+                            <img src="pic/kanaung.jpg" alt="" class="post-list-img">
+                            <div class="post-name">
+                                <h1>Ka Naung</h1>
+                                <span>1 hr . <i class="feather-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="feather-icon">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h1>
+                            Margaery Tyrell<br>
+                            #No324<br>
+                            #Day21 (22.5.2020)<br>
+                            #100daysSketchDrawingchallenge<br>
+                        </h1>
+                    </div>
+                    <div class="content-img">
+                        <img src="pic/pic.jpg" alt="">
+                    </div>
+                    <div class="reaction">
+                        <div class="reaction-like">
+                            <div class="reaction-image">
+                                <img src="pic/like.png" style="margin-right: -6px;" alt="">
+                                <img src="pic/love.png" alt="">
+                                <img src="pic/haha.png" style="margin-left: -6px; margin-right: 10px;" alt="">
+                            </div>
+                            <span>Khin Wint Wah, Poe Ma Mhi Tar and 3.5K others</span>
+                        </div>
+                        <div class="reaction-shares">
+                            <span class="reaction-comment">2.4K Comments</span>
+                            <span class="reaction-share">1.4K Comments</span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="like-comment-share">
+                        <div class="like">
+                            <i class="far fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i class="far fa-comment-alt"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div class="share">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="comment-input-box">
+                        <img class="me" src="pic/profile.jpg" alt="">
+                        <div class="comment-box">
+                            <input type="text" placeholder="Write a comment...">
+                            <div class="comment-post">
+                                <i class="far fa-smile"></i>
+                                <i class="feather-camera"></i>
+                                <i class="fab fa-git-square"></i>
+                                <i class="feather-image"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-list">
+                <div class="post-list-box">
+                    <div class="post-list-who">
+                        <div class="post-list-name">
+                            <img src="pic/kanaung.jpg" alt="" class="post-list-img">
+                            <div class="post-name">
+                                <h1>Ka Naung</h1>
+                                <span>1 hr . <i class="feather-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="feather-icon">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h1>
+                            Margaery Tyrell<br>
+                            #No324<br>
+                            #Day21 (22.5.2020)<br>
+                            #100daysSketchDrawingchallenge<br>
+                        </h1>
+                    </div>
+                    <div class="content-img">
+                        <img src="pic/pic.jpg" alt="">
+                    </div>
+                    <div class="reaction">
+                        <div class="reaction-like">
+                            <div class="reaction-image">
+                                <img src="pic/like.png" style="margin-right: -6px;" alt="">
+                                <img src="pic/love.png" alt="">
+                                <img src="pic/haha.png" style="margin-left: -6px; margin-right: 10px;" alt="">
+                            </div>
+                            <span>Khin Wint Wah, Poe Ma Mhi Tar and 3.5K others</span>
+                        </div>
+                        <div class="reaction-shares">
+                            <span class="reaction-comment">2.4K Comments</span>
+                            <span class="reaction-share">1.4K Comments</span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="like-comment-share">
+                        <div class="like">
+                            <i class="far fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i class="far fa-comment-alt"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div class="share">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="comment-input-box">
+                        <img class="me" src="pic/profile.jpg" alt="">
+                        <div class="comment-box">
+                            <input type="text" placeholder="Write a comment...">
+                            <div class="comment-post">
+                                <i class="far fa-smile"></i>
+                                <i class="feather-camera"></i>
+                                <i class="fab fa-git-square"></i>
+                                <i class="feather-image"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-list">
+                <div class="post-list-box">
+                    <div class="post-list-who">
+                        <div class="post-list-name">
+                            <img src="pic/kanaung.jpg" alt="" class="post-list-img">
+                            <div class="post-name">
+                                <h1>Ka Naung</h1>
+                                <span>1 hr . <i class="feather-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="feather-icon">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h1>
+                            Margaery Tyrell<br>
+                            #No324<br>
+                            #Day21 (22.5.2020)<br>
+                            #100daysSketchDrawingchallenge<br>
+                        </h1>
+                    </div>
+                    <div class="content-img">
+                        <img src="pic/pic.jpg" alt="">
+                    </div>
+                    <div class="reaction">
+                        <div class="reaction-like">
+                            <div class="reaction-image">
+                                <img src="pic/like.png" style="margin-right: -6px;" alt="">
+                                <img src="pic/love.png" alt="">
+                                <img src="pic/haha.png" style="margin-left: -6px; margin-right: 10px;" alt="">
+                            </div>
+                            <span>Khin Wint Wah, Poe Ma Mhi Tar and 3.5K others</span>
+                        </div>
+                        <div class="reaction-shares">
+                            <span class="reaction-comment">2.4K Comments</span>
+                            <span class="reaction-share">1.4K Comments</span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="like-comment-share">
+                        <div class="like">
+                            <i class="far fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i class="far fa-comment-alt"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div class="share">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="comment-input-box">
+                        <img class="me" src="pic/profile.jpg" alt="">
+                        <div class="comment-box">
+                            <input type="text" placeholder="Write a comment...">
+                            <div class="comment-post">
+                                <i class="far fa-smile"></i>
+                                <i class="feather-camera"></i>
+                                <i class="fab fa-git-square"></i>
+                                <i class="feather-image"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chat-box">
+            <div class="chat-right">
+                <div class="chat-birthday">
+                    <span>Birthdays</span>
+                    <div class="birthday-now">
+                        <i class="fas fa-gift"></i>
+                        <p>Myo Pyae Sone and 11 others have birthdays today</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="contacts">
+                    <span>Contacts</span>
+                    <div class="contacts-logo">
+                        <i class="feather-video"></i>
+                        <i class="feather-search"></i>
+                        <i class="feather-more-horizontal"></i>
+                    </div>
+                </div>
+                <div class="shortcuts contacts-people">
+                    <div class="shortcuts-box">
+                        <div class="page-group">
+                            <img src="pic/heinhtetzan.jpg" alt="">
+                            <span>Hein Htet Zan</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/swamhtet.jpg" alt="">
+                            <span>Swam Htet</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/chitmin.jpg" alt="">
+                            <span>Chit Min</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/kanaung.jpg" alt="">
+                            <span>Ka Naung</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/myopyae.jpg" alt="">
+                            <span>Myo Pyae Sone</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/monmyat.jpg" alt="">
+                            <span>Mon Myat Kyaw Zaw</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/aungheinkyaw.jpg" alt="">
+                            <span>Aung Hein Kyaw</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/teekay.jpg" alt="">
+                            <span>Tee Kay</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/linnyan.jpg" alt="">
+                            <span>Lin Nyan Htun</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/minthukyaw.jpg" alt="">
+                            <span>Min Thu Kyaw</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/cat1.jpg" alt="">
+                            <span>Min Khant</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/girl2.jpg" alt="">
+                            <span>Hla Hla</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/cat4.jpg" alt="">
+                            <span>Stephen Moris</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/cat5.jpg" alt="">
+                            <span>Htun Aung</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/dog2.jpg" alt="">
+                            <span>Kyaw Khaing</span>
+                        </div>
+                        <div class="page-group">
+                            <img src="pic/dog3.jpg" alt="">
+                            <span>Kyaw Kyaw</span>
+                        </div>
+                        <div class="contact-plus-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

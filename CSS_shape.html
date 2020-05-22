@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shape</title>
+    <style>
+
+        div{
+            display: inline-block;
+        }
+        .square{
+            width: 50px;
+            height: 50px;
+            border: 1px solid green;
+        }
+        .square-rounded{
+            border-radius: 5px;
+        }
+        .rectangle{
+            width: 150px;
+            height: 50px;
+            border: 1px solid green;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgb(47, 56, 47);
+            border-radius: 50%;
+            background: rgb(226, 52, 52);
+        }
+        .img-circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .bg-img{
+            background-image: url(girl1.jpg);
+            background-size: cover;
+        }
+        .triangle{
+            border: 50px solid #fff;
+            border-bottom-color: rgb(10, 216, 216);
+        }
+        .triangle-2{
+            border: 50px solid #fff;
+            border-bottom-color: rgb(10, 216, 216);
+            border-left-color: rgb(10, 216, 216);
+        }
+        .envelope{
+            border: 40px solid rgb(163, 158, 158);
+            border-top-color: rgb(51, 77, 228);
+            border-bottom-width: 10px;
+            border-radius: 5px;
+        }
+        .homework{
+            width: 200px;
+            height: 70px;
+            background: rgba(10, 233, 29, 0.747);
+            position: relative;
+            margin-left: 200px;
+        }
+        .homework::after{
+            content: '';
+            border: 35px solid #fff;
+            position: absolute;
+            right: -70px;
+            bottom: 0px;
+            border-left-color: rgba(10, 233, 29, 0.747);
+        }
+        .homework::before{
+            content: '';
+            border: 35px solid rgba(10, 233, 29, 0.747);
+            position: absolute;
+            left: -70px;
+            border-left-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML, CSS Shapes</h1>
+    <div class="square"></div>
+    <div class="square square-rounded"></div>
+    <div class="rectangle"></div>
+
+    <hr>
+    <div class="circle"></div>
+    <img src="road1.jpg" class="img-circle"></img>
+    <div class="circle bg-img"></div>
+    <hr>
+    <div class="triangle"></div>
+    <div class="triangle-2"></div>
+
+    <div class="envelope"></div>
+    <hr>
+    <div class="homework"></div>
+</body>
+</html>

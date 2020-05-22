@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box testing</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .one{
+            height:50vh;
+            background-color:#e5e5e5;
+            display:flex;
+        }
+        .part{
+            flex-grow:1;
+        }
+        .bg-yellow{
+            background-color: rgb(252, 94, 181);
+        }
+        .bg-pink{
+            background-color:rgb(245, 8, 47);
+        }
+        .right{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .two{
+            display:flex;
+            width:990px;
+            justify-content: space-between;
+            margin:auto;
+            height: 40vh;
+        }
+        .two-part{
+            box-shadow:5px 10px 10px black;
+            width:300px;
+            text-align:center;
+            padding:20px;
+            margin:-100px;
+            background-color:#f6f6f6;
+        }
+        .three{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:50vh;
+            margin-top:100px;
+        }
+        .three-part{
+            width: 300px;
+            text-align:center;
+            line-height:2;
+            padding:10px 20px;
+            box-shadow:0px 5px 20px rgb(3, 97, 3);
+        }
+        .four{
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color:honeydew;
+        }
+        .four-part{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 900px;
+        }
+        .four-part-para{
+            width: 350px;
+            line-height:2;
+        }
+        @media screen and (max-width: 480px) {
+            .two{
+                flex-direction: column;
+            }
+            .two-part{
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="one">
+        <div class="part left bg-pink"></div>
+        <div class="part right bg-yellow">
+            <div class="" style="width:300px;">
+                <h1>Hello testing</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, reprehenderit eaque optio accusantium repellat impedit tenetur perferendis provident minima incidunt ipsam. Unde, maxime! Quo ipsa hic facere veritatis, illo quisquam.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="two">
+        <div class="two-part">
+            <h1>This is 1.</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis provident tempora consectetur corrupti nisi, accusantium quaerat possimus repellendus, itaque soluta ipsam voluptatum reprehenderit veniam voluptates. Voluptates voluptatem fugit cum repellendus.
+            </p>
+        </div>
+        <div class="two-part">
+            <h1>This is 2.</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis provident tempora consectetur corrupti nisi, accusantium quaerat possimus repellendus, itaque soluta ipsam voluptatum reprehenderit veniam voluptates. Voluptates voluptatem fugit cum repellendus.
+            </p>
+        </div>
+        <div class="two-part">
+            <h1>This is 3.</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis provident tempora consectetur corrupti nisi, accusantium quaerat possimus repellendus, itaque soluta ipsam voluptatum reprehenderit veniam voluptates. Voluptates voluptatem fugit cum repellendus.
+            </p>
+        </div>
+    </section>
+    <section class="three">
+        <div class="three-part">
+            <h1>Hello testing</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ratione in illo culpa ut rerum, architecto totam reprehenderit unde. Dolorem quibusdam ducimus quia odit vitae delectus eaque natus rem voluptate.
+            </p>
+        </div>
+    </section>
+    <section class="four">
+        <div class="four-part">
+            <img src="girl1.jpg" alt="" style="width: 500px; height: 300px;">
+            <div class="four-part-para">
+                <h1 style="font-size:30px;color:rgb(10, 245, 10);">Hello testing</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio deserunt ratione, culpa magnam beatae blanditiis id harum vero aut autem amet inventore quod quo nam, sequi consequuntur at ipsum repellat!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam a perspiciatis facilis in aliquam natus alias ipsam debitis nobis, molestias eum libero pariatur incidunt ab ipsum nam impedit. Assumenda, dolorem?
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
